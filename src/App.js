@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.jsx
+import React from "react";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import CategorySection from "./components/CategorySection";
+import BestInPlump from "./components/BestInPlump";
+import ProductsProven from "./components/ProductsProven";
+import ProductShowcase from "./components/ProductShowcase";
+import PlumpingKits from "./components/PlumpingKits";
+import MadeForEveryone from "./components/MadeForEveryone";
+import SocialMedia from "./components/SocialMedia";
+import Newsletter from "./components/Newsletter";
+import Footer from "./components/Footer";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="min-h-screen bg-white">
+      <Navbar />
+      <Hero />
+      <CategorySection />
+      <BestInPlump />
+      <ProductsProven />
+      <ProductShowcase />
+      <PlumpingKits />
+      <MadeForEveryone />
+      <SocialMedia />
+      <Newsletter />
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;
